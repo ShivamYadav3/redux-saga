@@ -23,7 +23,7 @@ function* fetchUser(action) {
   and only the latest one will be run.
 */
 function* watchAddNumRequest() {
-  yield takeLatest("calcuator/addRequest", fetchUser);
+  yield takeLatest("calculator/addRequest", fetchUser);
 }
 
 export default watchAddNumRequest;

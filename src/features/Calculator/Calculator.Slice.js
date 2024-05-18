@@ -5,8 +5,8 @@ const initialState = {
   isLoading: false,
 };
 
-export const calcuatorSlice = createSlice({
-  name: "calcuator",
+export const calculatorSlice = createSlice({
+  name: "calculator",
   initialState,
   reducers: {
     addRequest: (state) => {
@@ -38,6 +38,6 @@ export const calcuatorSlice = createSlice({
 
 // Action creators are generated for each case reducer function
 export const { addRequest, addRequestSuccess, addRequestFailed } =
-  calcuatorSlice.actions;
+  calculatorSlice.actions;
 
-export default calcuatorSlice.reducer;
+export default calculatorSlice.reducer;
